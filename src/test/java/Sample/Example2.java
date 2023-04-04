@@ -12,6 +12,6 @@ public class Example2 {
 	@Test
 	public void sample4()
 	{
-		System.out.println("Sample script 4");
+		System.out.println("Sample");
 	}
 }
