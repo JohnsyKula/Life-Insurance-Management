@@ -16,4 +16,8 @@ public class Example1 {
 		System.out.println("Sample script 2");
 
 	}
+	public void Sample3()
+	{
+		System.out.println("hi");
+	}
 }
