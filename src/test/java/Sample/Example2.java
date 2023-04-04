@@ -12,6 +12,7 @@ public class Example2 {
 	@Test
 	public void sample4()
 	{
-		System.out.println("Sample");
+		System.out.println("Sample hi to all");
+		System.out.println("know");
 	}
 }
