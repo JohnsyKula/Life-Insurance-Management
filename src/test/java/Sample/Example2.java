@@ -13,6 +13,7 @@ public class Example2 {
 	public void sample4()
 	{
 		System.out.println("Sample hi to all");
-		System.out.println("know");
+		System.out.println("know    hiiiiiii");
+		
 	}
 }
