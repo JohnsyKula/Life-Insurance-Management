@@ -11,6 +11,6 @@ public class Example2 {
 	
 	@Test(groups="regression")
 	public static void script4() {
-		System.out.println("Script 3");
+		System.out.println("Script 4");
 	}
 }
