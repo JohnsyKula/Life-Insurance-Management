@@ -7,11 +7,8 @@ public class Example1 {
 	@Test(groups="smoke")
 	public void sample1()
 	{
+		System.out.println(System.getProperty("browser"));
 		System.out.println("Sample script 1");
-		
-		
-		
-
 	}
     @Test(groups="regression")
 	public void sample2()

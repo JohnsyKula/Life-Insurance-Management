@@ -18,9 +18,11 @@ public class ExcelUtility {
 	 * @param RowNo
 	 * @param columnNo
 	 * @return String
+	 * @throws IOException 
+	 * @throws EncryptedDocumentException 
 	 * @throws Throwable
 	 */
-	public String readDataFromExcel(String SheetName,int RowNo,int columnNo) throws Throwable
+	public String readDataFromExcel(String SheetName,int RowNo,int columnNo) throws EncryptedDocumentException, IOException
 	{
 		FileInputStream fis=new FileInputStream(IPathConstants.excelPath);
 		Workbook wb = WorkbookFactory.create(fis);
