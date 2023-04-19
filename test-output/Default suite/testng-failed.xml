@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Sample.GitPractise2">
+      <class name="Sample.BrokenLink">
         <methods>
-          <include name="scriptForGrid"/>
+          <include name="brokenLink"/>
         </methods>
-      </class> <!-- Sample.GitPractise2 -->
+      </class> <!-- Sample.BrokenLink -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

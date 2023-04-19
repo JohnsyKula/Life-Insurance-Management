@@ -2,29 +2,22 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-12T22:28:07 IST" name="Default suite" finished-at="2023-04-12T22:28:28 IST" duration-ms="21402">
+  <suite started-at="2023-04-18T20:45:36 IST" name="Default suite" finished-at="2023-04-18T20:45:45 IST" duration-ms="8303">
     <groups>
     </groups>
-    <test started-at="2023-04-12T22:28:07 IST" name="Default test" finished-at="2023-04-12T22:28:28 IST" duration-ms="21402">
-      <class name="Sample.GitPractise2">
-        <test-method signature="scriptForGrid()[pri:0, instance:Sample.GitPractise2@5f9b2141]" started-at="2023-04-12T22:28:07 IST" name="scriptForGrid" finished-at="2023-04-12T22:28:28 IST" duration-ms="21363" status="FAIL">
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+    <test started-at="2023-04-18T20:45:36 IST" name="Default test" finished-at="2023-04-18T20:45:45 IST" duration-ms="8303">
+      <class name="Sample.BrokenLink">
+        <test-method signature="brokenLink()[pri:0, instance:Sample.BrokenLink@15bbf42f]" started-at="2023-04-18T20:45:36 IST" name="brokenLink" finished-at="2023-04-18T20:45:45 IST" duration-ms="8264" status="FAIL">
+          <exception class="java.net.MalformedURLException">
             <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'JOHNSY', ip: '192.168.3.164', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: RemoteWebDriver]]>
+              <![CDATA[Cannot invoke "String.length()" because "spec" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'JOHNSY', ip: '192.168.3.164', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
-at Sample.GitPractise2.scriptForGrid(GitPractise2.java:31)
+              <![CDATA[java.net.MalformedURLException: Cannot invoke "String.length()" because "spec" is null
+at java.base/java.net.URL.<init>(URL.java:708)
+at java.base/java.net.URL.<init>(URL.java:569)
+at java.base/java.net.URL.<init>(URL.java:516)
+at Sample.BrokenLink.brokenLink(BrokenLink.java:31)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -53,48 +46,16 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Failed to connect to /192.168.225.190:2352
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-... 32 more
-Caused by: java.net.ConnectException: Connection timed out: no further information
-at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
-at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-at java.base/java.net.Socket.connect(Socket.java:633)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-... 54 more
+Caused by: java.lang.NullPointerException: Cannot invoke "String.length()" because "spec" is null
+at java.base/java.net.URL.<init>(URL.java:614)
+... 31 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          </exception> <!-- java.net.MalformedURLException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- scriptForGrid -->
-      </class> <!-- Sample.GitPractise2 -->
+        </test-method> <!-- brokenLink -->
+      </class> <!-- Sample.BrokenLink -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
